@@ -8,10 +8,11 @@
   </head>
   <body>
     <div id="app">
-      <h1>Artist List</h1>
-      <h2>{{titulo}}</h2>
+      <h1>{{titulo}}</h1>
       <ul>
-        <li v-for="artist in artists">{{artist.title.rendered}}</li>
+        <li v-for="artist in artists">
+          <p v-if="artist.title">{{artist.title.rendered}}</p>
+        </li>
       </ul>
       <footer>
         copyright by Pedrito Jose. Todos los derechos reservados
