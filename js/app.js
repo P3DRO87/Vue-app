@@ -10,7 +10,6 @@ const app = new Vue({
     getArtists() {
       axios.get(this.apiUrl).then(response => {
         this.artists = response.data;
-        // console.log(response);
       });
     }
   },
