@@ -10,7 +10,7 @@
     </div>
     <div class="container artist-container">
       <div class="row">
-        <div v-for="artist in artists" class="col-md-4">
+        <div v-for="(artist, index) in artists" class="col-lg-4 col-md-6" :key="index">
           <div class="artist">
             <p v-if="artist.title">{{ artist.title.rendered }}</p>
             <img class="img-fluid" v-if="artist.acf" :src="artist.acf.artis_image.url" alt />
@@ -24,11 +24,13 @@
 <script>
 import axios from "axios";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 export default {
   name: "Vueapp",
   components: {
-    Header
+    Header,
+    Footer
   },
   data() {
     return {

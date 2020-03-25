@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="bg-dark">
     <p>I am the header</p>
   </header>
 </template>
