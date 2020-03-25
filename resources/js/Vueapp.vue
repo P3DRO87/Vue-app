@@ -18,6 +18,7 @@
         </div>
       </div>
     </div>
+    <Typedata />
     <Footer />
   </div>
 </template>
@@ -26,12 +27,14 @@
 import axios from "axios";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import Typedata from "./Components/Typedata";
 
 export default {
   name: "Vueapp",
   components: {
     Header,
-    Footer
+    Footer,
+    Typedata
   },
   data() {
     return {
