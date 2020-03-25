@@ -3,7 +3,14 @@
     <div class="row">
       <div class="col-lg-12">
         <form action class="form-group">
-          <input type="text" class="form-control" />
+          <input
+            type="text"
+            class="form-control"
+            v-model="mirror"
+            placeholder="abajo aparece lo que escribes :D"
+          />
+          <br />
+          <div class="form-control">{{mirror}}</div>
         </form>
       </div>
       <div class="col-lg-12"></div>
@@ -13,6 +20,12 @@
 
 <script>
 export default {
-  name: "Typedata"
+  name: "Typedata",
+
+  data() {
+    return {
+      mirror: ""
+    };
+  }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <header class="bg-dark">
-    <p>I am the header</p>
+    <p>Vue-app practice with API :D</p>
   </header>
 </template>
 
