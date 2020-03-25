@@ -12,30 +12,7 @@
     <title>Vue-app</title>
   </head>
   <body>
-    <div id="app">
-      <div class="container header-container">
-        <div class="row">
-          <div class="col">
-            <h1>{{titulo}}</h1>
-          </div>
-        </div>
-      </div>
-      <div class="container artist-container">
-        <div class="row">
-          <div v-for="artist in artists" class="col-md-4">
-            <div class="artist">
-              <p v-if="artist.title">{{artist.title.rendered}}</p>
-              <img
-                class="img-fluid"
-                v-if="artist.acf"
-                :src="artist.acf.artis_image.url"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="app"></div>
     <footer>
       copyright by Pedrito Jose. Todos los derechos reservados
     </footer>

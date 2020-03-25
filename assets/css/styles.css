@@ -1,3 +1,10 @@
+header {
+  background: #000; }
+  header p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px; }
+
 .artist-container .artist {
   box-shadow: 0px 0px 5px #808080;
   margin-bottom: 20px;
