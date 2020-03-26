@@ -2,11 +2,11 @@
   <div class="container getcontent-container">
     <div class="row">
       <div class="d-flex align-items-end col-lg-2">
-        <button class="btn btn-primary">Get Now</button>
+        <button @click="getData" class="btn btn-primary">Get Now</button>
       </div>
       <div class="col-lg-10">
         <div class="content-container">
-          <h1>The content...</h1>
+          <h1>{{contenedor}}</h1>
         </div>
       </div>
     </div>
@@ -14,10 +14,23 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Getcontent",
+  data() {
+    return {
+      contenedor: [],
+      url: "http://localhost/vue-app/my-first-api/my-first-api.php"
+    };
+  },
   methods: {
-    getData() {}
+    getData() {
+      axios.get(this.url).then(response => {
+        this.contenedor = response.data;
+        console.log(response);
+      });
+    }
   }
 };
-</script>>
+</script>
