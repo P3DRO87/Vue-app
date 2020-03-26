@@ -21,6 +21,7 @@
         </div>
       </div>
       <Typedata />
+      <Getcontent />
       <Footer />
     </div>
   </div>
@@ -32,6 +33,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Typedata from "./Components/Typedata";
 import Loader from "./Components/Loader";
+import Getcontent from "./Components/Getcontent";
 
 export default {
   name: "Vueapp",
@@ -39,7 +41,8 @@ export default {
     Header,
     Footer,
     Typedata,
-    Loader
+    Loader,
+    Getcontent
   },
   data() {
     return {

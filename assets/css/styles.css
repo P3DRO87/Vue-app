@@ -110,3 +110,9 @@ svg {
 
 #contenedor {
   display: none; }
+
+.getcontent-container {
+  margin-bottom: 20px; }
+  .getcontent-container .content-container {
+    padding: 50px;
+    border: 1px solid; }
