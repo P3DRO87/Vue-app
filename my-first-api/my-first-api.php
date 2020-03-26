@@ -1,8 +1,9 @@
 <?php 
 
-
-  echo 'lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. 
-  lorem ipsum dolor sit amet. hola mundo';
-
+if ($_SERVER['get']) {
+  echo 'lorem ipsum dolor sit amet';
+} else {
+	echo 'method is not get';
+}
 
  ?>
