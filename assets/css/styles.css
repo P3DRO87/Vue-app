@@ -114,5 +114,6 @@ svg {
 .getcontent-container {
   margin-bottom: 20px; }
   .getcontent-container .content-container {
+    margin-top: 20px;
     padding: 50px;
     border: 1px solid; }

@@ -12,3 +12,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Getcontent",
+  methods: {
+    getData() {}
+  }
+};
+</script>>
