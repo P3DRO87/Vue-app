@@ -17,7 +17,7 @@
               <p v-if="artist.title">{{ artist.title.rendered }}</p>
               <img class="img-fluid" v-if="artist.acf" :src="artist.acf.artis_image.url" alt />
               <div class="d-flex justify-content-center">
-                <button class="btn btn-primary" @click="toggleModal">View More</button>
+                <button class="btn btn-primary" @click="toggleModal(index)">View More</button>
               </div>
             </div>
           </div>
@@ -64,25 +64,27 @@ export default {
         "https://dev-encore-development.pantheonsite.io/wp-json/wp/v2/artists",
       showModal: false,
       selectedArtits: {
-        name: "im the name :D",
-        description: "im the description :D"
+        name: "",
+        description: ""
       }
     };
   },
   methods: {
-    getArtists(numeroDeArtista) {
-      // 1 Con el numero de artista, definir el artista seleccionado antes de abrir el modal
-
-      // 2 Replasar data de selected artist por la del artista seleccionado.
-
-      // 3 abrir el modal
-
+    getArtists() {
       axios.get(this.apiUrl).then(response => {
         this.artists = response.data;
       });
     },
 
-    toggleModal() {
+    toggleModal(numeroDeArtista) {
+      // 1 Con el numero de artista, definir el artista seleccionado antes de abrir el modal
+
+      // 2 Replasar data de selected artist por la del artista seleccionado.
+      const selectedArtist = this.artists[numeroDeArtista];
+      console.log(selectedArtist);
+      this.selectedArtits.name = selectedArtist.title;
+
+      // 3 abrir el modal
       this.showModal = !this.showModal;
     }
   },
