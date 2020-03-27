@@ -17,7 +17,7 @@
               <p v-if="artist.title">{{ artist.title.rendered }}</p>
               <img class="img-fluid" v-if="artist.acf" :src="artist.acf.artis_image.url" alt />
               <div class="d-flex justify-content-center">
-                <Modal />
+                <button class="btn btn-primary" @click="toggleModal">View More</button>
               </div>
             </div>
           </div>
@@ -25,6 +25,7 @@
       </div>
       <Typedata />
       <Getcontent />
+      <Modal v-if="showModal" v-on:close="toggleModal" title="Modal" />
       <Footer />
     </div>
   </div>
@@ -55,7 +56,8 @@ export default {
       titulo: "Artists List",
       artists: [],
       apiUrl:
-        "https://dev-encore-development.pantheonsite.io/wp-json/wp/v2/artists"
+        "https://dev-encore-development.pantheonsite.io/wp-json/wp/v2/artists",
+      showModal: false
     };
   },
   methods: {
@@ -63,6 +65,10 @@ export default {
       axios.get(this.apiUrl).then(response => {
         this.artists = response.data;
       });
+    },
+
+    toggleModal() {
+      this.showModal = !this.showModal;
     }
   },
   created() {
