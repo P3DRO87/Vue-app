@@ -70,7 +70,13 @@ export default {
     };
   },
   methods: {
-    getArtists() {
+    getArtists(numeroDeArtista) {
+      // 1 Con el numero de artista, definir el artista seleccionado antes de abrir el modal
+
+      // 2 Replasar data de selected artist por la del artista seleccionado.
+
+      // 3 abrir el modal
+
       axios.get(this.apiUrl).then(response => {
         this.artists = response.data;
       });
