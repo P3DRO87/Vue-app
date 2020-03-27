@@ -1,5 +1,6 @@
 .artist-container {
   .artist {
+    padding-bottom: 10px;
     box-shadow: 0px 0px 5px #808080;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -9,6 +10,7 @@
       width: 100%;
       object-fit: cover;
       object-position: top;
+      margin-bottom: 10px;
     }
     p {
       padding-top: 20px;

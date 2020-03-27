@@ -20,8 +20,8 @@ export default {
   name: "Getcontent",
   data() {
     return {
-      contenedor: [],
-      url: "http://localhost/vue-app/my-first-api/my-first-api.php"
+      contenedor: "",
+      url: "http://localhost/Vue-app/my-first-api/my-first-api.php"
     };
   },
   methods: {

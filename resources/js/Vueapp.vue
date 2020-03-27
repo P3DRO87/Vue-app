@@ -16,6 +16,9 @@
             <div class="artist">
               <p v-if="artist.title">{{ artist.title.rendered }}</p>
               <img class="img-fluid" v-if="artist.acf" :src="artist.acf.artis_image.url" alt />
+              <div class="d-flex justify-content-center">
+                <Modal />
+              </div>
             </div>
           </div>
         </div>
@@ -34,6 +37,7 @@ import Footer from "./Components/Footer";
 import Typedata from "./Components/Typedata";
 import Loader from "./Components/Loader";
 import Getcontent from "./Components/Getcontent";
+import Modal from "./Components/Modal";
 
 export default {
   name: "Vueapp",
@@ -42,8 +46,10 @@ export default {
     Footer,
     Typedata,
     Loader,
-    Getcontent
+    Getcontent,
+    Modal
   },
+
   data() {
     return {
       titulo: "Artists List",

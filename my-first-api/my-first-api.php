@@ -1,6 +1,6 @@
 <?php 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-  echo 'lorem ipsum';
+  echo 'The content';
 }
 
  ?>
