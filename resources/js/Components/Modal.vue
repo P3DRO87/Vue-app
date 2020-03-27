@@ -4,7 +4,8 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <h3>{{title}}</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, quis esse? Alias, et quidem neque, dolorem soluta, commodi maiores laudantium quasi sunt fuga delectus voluptate animi! Cumque numquam obcaecati at.</p>
+          <p>{{selectedArtits.name}}</p>
+          <p>{{selectedArtits.description}}</p>
           <button class="btn btn-primary" @click="closeModal">Close</button>
         </div>
       </div>
@@ -16,7 +17,7 @@
 export default {
   name: "Modal",
 
-  props: ["title"],
+  props: ["title", "selectedArtits"],
 
   methods: {
     closeModal() {

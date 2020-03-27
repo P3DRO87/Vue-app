@@ -25,7 +25,12 @@
       </div>
       <Typedata />
       <Getcontent />
-      <Modal v-if="showModal" v-on:close="toggleModal" title="Modal" />
+      <Modal
+        v-if="showModal"
+        v-on:close="toggleModal"
+        title="Modal"
+        :selectedArtits="selectedArtits"
+      />
       <Footer />
     </div>
   </div>
@@ -57,7 +62,11 @@ export default {
       artists: [],
       apiUrl:
         "https://dev-encore-development.pantheonsite.io/wp-json/wp/v2/artists",
-      showModal: false
+      showModal: false,
+      selectedArtits: {
+        name: "im the name :D",
+        description: "im the description :D"
+      }
     };
   },
   methods: {
