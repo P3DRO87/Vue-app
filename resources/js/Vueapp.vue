@@ -80,9 +80,14 @@ export default {
       // 1 Con el numero de artista, definir el artista seleccionado antes de abrir el modal
 
       // 2 Replasar data de selected artist por la del artista seleccionado.
-      const selectedArtist = this.artists[numeroDeArtista];
-      console.log(selectedArtist);
-      this.selectedArtits.name = selectedArtist.title;
+      const selectedArtist = numeroDeArtista
+        ? this.artists[numeroDeArtista]
+        : false;
+
+      if (selectedArtist != false) {
+        console.log(selectedArtist);
+        this.selectedArtits.name = selectedArtist.title;
+      }
 
       // 3 abrir el modal
       this.showModal = !this.showModal;
