@@ -86,7 +86,7 @@ export default {
 
       if (selectedArtist != false) {
         console.log(selectedArtist);
-        this.selectedArtits.name = selectedArtist.title;
+        this.selectedArtits.name = selectedArtist.title.rendered;
       }
 
       // 3 abrir el modal
