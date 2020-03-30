@@ -3,6 +3,9 @@
     <h2>I am the page 1.</h2>
     <ComponentPage1 />
     <router-link to="/page2">Go to page 2</router-link>
+    <br />
+    <br />
+    <router-link to="/page3">Go to page 3</router-link>
     <h3>This is Vuex in action!</h3>
     <VuexOutput />
     <VuexInput />
