@@ -4,11 +4,14 @@
     <ComponentPage2 />
     <p>Lorem Ipsum Dolor Site Sammet!</p>
     <router-link to="/">Go to page 1</router-link>
+    <br />
+    <br />
+    <router-link to="/page2">Go to page 2</router-link>
   </div>
 </template>
 
 <script>
-import ComponentPage3 from "./page3/components /ComponentPage3";
+import ComponentPage3 from "./page3/components/ComponentPage3";
 
 export default {
   name: "Page3",
