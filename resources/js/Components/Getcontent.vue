@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       contenedor: "",
-      url: "http://localhost/Vue-app/my-first-api/my-first-api.php"
+      url: "http://localhost/vue-app/my-first-api/my-first-api.php"
     };
   },
   methods: {

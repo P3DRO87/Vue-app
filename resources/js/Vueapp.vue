@@ -93,7 +93,7 @@ export default {
       this.showModal = !this.showModal;
     }
   },
-  created() {
+  mounted() {
     this.getArtists();
   }
 };
