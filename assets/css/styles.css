@@ -1,146 +1,60 @@
-body {
-  background: #000; }
+.demo-layout * {
+  font-family: arial;
+  color: #35495e; }
 
-header {
-  background: #000;
-  padding: 20px; }
-  header p {
-    color: #fff;
-    text-align: center;
-    font-size: 18px; }
-
-.artist-container .artist {
-  padding-bottom: 10px;
-  box-shadow: 0px 0px 5px #808080;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  overflow: hidden; }
-  .artist-container .artist img {
-    max-height: 182px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    margin-bottom: 10px; }
-  .artist-container .artist p {
-    padding-top: 20px;
-    text-align: center; }
-
-footer {
-  padding: 20px;
-  box-shadow: 0px 0px 5px #000000; }
-  footer p {
-    color: #fff;
-    text-align: center; }
-
-.typedata-form {
-  margin-bottom: 20px; }
-
-svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite; }
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s; }
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0px;
-    opacity: 1; } }
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0;
-    opacity: 1; } }
-
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s; }
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0px;
-    opacity: 1; } }
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0; }
-  to {
-    bottom: 0;
-    opacity: 1; } }
-
-#contenedor {
-  display: none; }
-
-.getcontent-container {
-  margin-bottom: 20px; }
-  .getcontent-container .content-container {
-    margin-top: 20px;
-    padding: 50px;
-    border: 1px solid; }
-
-.modal-mask {
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: table;
-  transition: opacity 0.3s ease; }
-
-.modal-wrapper {
-  display: table-cell;
-  vertical-align: middle; }
-
-.modal-container {
-  width: 300px;
-  margin: 0px auto;
+.demo-layout header,
+.demo-layout footer {
+  background: #42b983;
+  color: #fff;
   padding: 20px 30px;
-  text-align: left;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease; }
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px; }
+
+.demo-layout .main .page {
+  border: 2px solid #2973b7;
+  margin: 20px 0px;
+  border-radius: 5px;
+  padding: 0px 30px; }
+  .demo-layout .main .page .page-title {
+    color: #2973b7; }
+  .demo-layout .main .page .component {
+    border: 2px solid #35495e;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 0px 10px; }
+    .demo-layout .main .page .component .component-title {
+      color: #35495e; }
+
+.demo-layout a,
+.demo-layout button {
+  background: #42b983;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 500ms; }
+
+.demo-layout a:hover,
+.demo-layout button:hover {
+  background: #369268; }
+
+.demo-layout .form-group {
+  margin-bottom: 10px; }
+  .demo-layout .form-group input {
+    border: 1px solid #35495e;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px; }
+  .demo-layout .form-group input:focus,
+  .demo-layout .form-group button:focus {
+    outline: none; }
+  .demo-layout .form-group label {
+    width: 190px;
+    display: inline-block; }
+
+.demo-layout .app-list {
+  padding-left: 17px; }

@@ -1,53 +1,23 @@
 <template>
-  <div id="app">
-    <Loader />
-    <div id="contenedor" class="animate-bottom">
-      <Header />
-      <div class="container header-container">
-        <div class="row">
-          <div class="col">
-            <h1>{{ titulo }}</h1>
-          </div>
-        </div>
-      </div>
-      <div class="container artist-container">
-        <div class="row">
-          <div v-for="(artist, index) in artists" class="col-lg-4 col-md-6" :key="index">
-            <div class="artist">
-              <p v-if="artist.title">{{ artist.title.rendered }}</p>
-              <img class="img-fluid" v-if="artist.acf" :src="artist.acf.artis_image.url" alt />
-              <div class="d-flex justify-content-center">
-                <button class="btn btn-primary" @click="toggleModal(index)">View More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Typedata />
-      <Getcontent />
-      <Modal
-        v-if="showModal"
-        v-on:close="toggleModal"
-        title="Modal"
-        :selectedArtits="selectedArtits"
-      />
-      <Footer />
+  <div id="vueApp" class="demo-layout">
+    <AppHeader />
+    <div class="main">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import axios from "axios";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Typedata from "./Components/Typedata";
-import Loader from "./Components/Loader";
-import Getcontent from "./Components/Getcontent";
-import Modal from "./Components/Modal";
+import AppHeader from "./layout_components/AppHeader";
+import AppFooter from "./layout_components/AppFooter";
 
 export default {
-  name: "Vueapp",
+  name: "VueInstance",
   components: {
+<<<<<<< HEAD
     Header,
     Footer,
     Typedata,
@@ -95,6 +65,27 @@ export default {
   },
   mounted() {
     this.getArtists();
+=======
+    AppHeader,
+    AppFooter
+>>>>>>> 6f80ad7200d78af5353828232c6215fdf77381f5
   }
 };
 </script>
+
+<style lang="scss">
+#productsApp {
+  min-height: 100vh;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+</style>
