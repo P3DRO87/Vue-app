@@ -1,9 +1,11 @@
 <template>
-  <p>I am a component in page 3</p>
+  <header>
+    I am the header
+  </header>
 </template>
 
 <script>
 export default {
-  name: "ComponentPage3"
+  name: "AppHeader"
 };
 </script>
