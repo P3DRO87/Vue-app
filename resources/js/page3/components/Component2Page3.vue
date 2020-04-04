@@ -1,5 +1,7 @@
 <template>
-  <div class="component"></div>
+  <div class="component">
+    <h3>I am the second component in page 3</h3>
+  </div>
 </template>
 
 <script>

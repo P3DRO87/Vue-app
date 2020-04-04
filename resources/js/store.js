@@ -26,20 +26,6 @@ const store = new Vuex.Store({
         description: payload.description
       };
       this.state.data.push(newData);
-    },
-
-    agregarTarea(e) {
-      if (!this.nuevaTarea) {
-        alert("porfavor escribe una actividad");
-        e.preventDefault();
-      } else {
-        this.tareas.push({
-          nombre: this.nuevaTarea,
-          estado: false
-        });
-        this.nuevaTarea = "";
-        localStorage.setItem("task", JSON.stringify(this.tareas));
-      }
     }
   }
 });
