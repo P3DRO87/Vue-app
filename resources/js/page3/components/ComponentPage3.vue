@@ -40,7 +40,7 @@ export default {
   },
 
   methods: {
-    agregarTarea: function(e) {
+    agregarTarea(e) {
       if (!this.nuevaTarea) {
         alert("porfavor escribe una actividad");
         e.preventDefault();

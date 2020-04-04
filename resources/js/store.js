@@ -15,7 +15,9 @@ const store = new Vuex.Store({
         description: "Description, Dolor Sit Sammet"
       }
     ],
-    alvison: "soy alvison"
+    nuevaTarea: "",
+    alvison: "soy alvison",
+    tareas: []
   },
   mutations: {
     addNewData(state, payload) {
@@ -25,9 +27,19 @@ const store = new Vuex.Store({
       };
       this.state.data.push(newData);
     },
-    removeData(state, payload) {
-      const index = payload;
-      this.state.data.splice(index, 1);
+
+    agregarTarea(e) {
+      if (!this.nuevaTarea) {
+        alert("porfavor escribe una actividad");
+        e.preventDefault();
+      } else {
+        this.tareas.push({
+          nombre: this.nuevaTarea,
+          estado: false
+        });
+        this.nuevaTarea = "";
+        localStorage.setItem("task", JSON.stringify(this.tareas));
+      }
     }
   }
 });
