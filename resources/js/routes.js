@@ -13,9 +13,8 @@ const routes = [
     component: Page2,
     name: "Page2"
   },
-
   {
-    path: "/",
+    path: "/page3",
     component: Page3,
     name: "Page3"
   }

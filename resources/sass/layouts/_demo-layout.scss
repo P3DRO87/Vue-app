@@ -32,7 +32,7 @@ $darkColor: #35495e;
         border: 2px solid $darkColor;
         border-radius: 5px;
         margin: 20px 0px;
-        padding: 0px 10px;
+        padding: 10px;
         .component-title {
           color: $darkColor;
         }
@@ -78,5 +78,8 @@ $darkColor: #35495e;
   }
   .app-list {
     padding-left: 17px;
+  }
+  .delete-button {
+    background: #dc3545;
   }
 }

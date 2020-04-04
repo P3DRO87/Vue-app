@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h2 class="page-title">I am the page 3.</h2>
-    <ComponentPage2 />
+    <ComponentPage3 />
     <div class="form-group">
       <router-link to="/">Go to page 1</router-link>
     </div>

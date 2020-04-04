@@ -4,9 +4,9 @@ Description: Child theme for the Twenty Ten theme
 Author: Antonio Flores - Trueapex
 Template: twentyten
 */
- 
+
 @import url("../twentyten/style.css");
 
 div#main {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
