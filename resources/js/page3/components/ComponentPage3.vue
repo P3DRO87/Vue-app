@@ -8,7 +8,7 @@
       v-on:keyup.enter="agregarTarea"
       placeholder="Type a new task :D"
     />
-    <button class="btn btn-primary" @click="agregarTarea">Add</button>
+    <button class="btn btn-success" @click="agregarTarea">Add</button>
     <div class="mt-3" v-for="(tarea, index) of tareas" :key="index">
       <div :class="['alert', tarea.estado ? 'alert-success' : 'alert-danger']" role="alert">
         <div class="d-flex justify-content-between align-items-center">

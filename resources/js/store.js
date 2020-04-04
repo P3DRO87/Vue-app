@@ -8,26 +8,30 @@ const store = new Vuex.Store({
     data: [
       {
         title: "This is data title 1",
-        description: "Description, Lorem Ipsum"
+        description: "Description, Lorem Ipsum",
       },
       {
         title: "This is data title 2",
-        description: "Description, Dolor Sit Sammet"
-      }
+        description: "Description, Dolor Sit Sammet",
+      },
     ],
     nuevaTarea: "",
     alvison: "soy alvison",
-    tareas: []
+    tareas: [],
   },
   mutations: {
     addNewData(state, payload) {
       const newData = {
         title: payload.title,
-        description: payload.description
+        description: payload.description,
       };
       this.state.data.push(newData);
-    }
-  }
+    },
+
+    removeData(state, payload) {
+      this.data.splice(data);
+    },
+  },
 });
 
 export default store;
