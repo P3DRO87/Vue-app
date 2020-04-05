@@ -29,7 +29,8 @@ const store = new Vuex.Store({
     },
 
     removeData(state, payload) {
-      this.data.splice(data);
+      const index = payload;
+      this.state.data.splice(index, 1);
     },
   },
 });
