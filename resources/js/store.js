@@ -15,9 +15,8 @@ const store = new Vuex.Store({
         description: "Description, Dolor Sit Sammet",
       },
     ],
-    nuevaTarea: "",
-    alvison: "soy alvison",
-    tareas: [],
+
+    dataTask: [],
   },
   mutations: {
     addNewData(state, payload) {
@@ -31,6 +30,14 @@ const store = new Vuex.Store({
     removeData(state, payload) {
       const index = payload;
       this.state.data.splice(index, 1);
+    },
+
+    addNewTask(state, payload) {
+      const newdataTask = {
+        newTask: payload.newTask,
+        estado: false,
+      };
+      state.dataTask.push(newdataTask);
     },
   },
 });

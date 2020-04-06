@@ -59,5 +59,10 @@
 .demo-layout .app-list {
   padding-left: 17px; }
 
-.demo-layout .delete-button {
+.demo-layout .detele-button {
   background: #dc3545; }
+  .demo-layout .detele-button:hover {
+    background: #7e1b25; }
+
+.demo-layout .material-icons {
+  color: #fff; }

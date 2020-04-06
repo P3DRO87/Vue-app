@@ -79,7 +79,14 @@ $darkColor: #35495e;
   .app-list {
     padding-left: 17px;
   }
-  .delete-button {
+  .detele-button {
     background: #dc3545;
+    &:hover {
+      background: #7e1b25;
+    }
+  }
+
+  .material-icons {
+    color: #fff;
   }
 }
