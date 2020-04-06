@@ -226,7 +226,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vuex
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"ComponentPage3\",\n\n  data() {\n    return {\n      newItem: {\n        newTask: \"\"\n      }\n    };\n  },\n\n  methods: {\n    addTask() {\n      if (this.newItem.newTask != \"\") {\n        this.$store.commit(\"addNewTask\", this.newItem);\n        this.newItem.newTask = \"\";\n      } else {\n        alert(\"please type something D:\");\n      }\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./resources/js/page3/components/ComponentPage3.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  name: \"ComponentPage3\",\n\n  data() {\n    return {\n      newItem: {\n        newTask: \"\"\n      }\n    };\n  },\n\n  methods: {\n    addTask() {\n      if (this.newItem.newTask != \"\") {\n        this.$store.commit(\"addNewTask\", this.newItem);\n      } else {\n        alert(\"please type something D:\");\n      }\n    }\n\n  }\n});\n\n//# sourceURL=webpack:///./resources/js/page3/components/ComponentPage3.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 

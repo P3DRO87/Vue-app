@@ -29,7 +29,6 @@ export default {
     addTask() {
       if (this.newItem.newTask != "") {
         this.$store.commit("addNewTask", this.newItem);
-        this.newItem.newTask = "";
       } else {
         alert("please type something D:");
       }
